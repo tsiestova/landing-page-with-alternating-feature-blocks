@@ -1,0 +1,11 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.layout {
+  padding: 0 32px;
+
+  @include breakpoint(desktop) {
+
+  }
+}
