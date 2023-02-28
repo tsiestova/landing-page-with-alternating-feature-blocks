@@ -1,0 +1,234 @@
+.footer {
+  background-color: var(--color3);
+  padding-top: 139px;
+  padding-bottom: 46px;
+
+  @include breakpoint(desktop) {
+    padding-top: 142px;
+  }
+
+  .layout {
+    padding: 0 16px;
+
+    @include breakpoint(desktop) {
+      display: flex;
+      align-items: center;
+      padding: 0 18px 0 60px;
+      gap: 130px;
+    }
+
+    div {
+      &:first-child {
+        @include breakpoint(desktop) {
+          max-width: 379px;
+          width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        @include breakpoint(desktop) {
+          flex: 1;
+        }
+      }
+
+      &:nth-child(3) {
+        @include breakpoint(desktop) {
+          flex: 1;
+          align-self: flex-start;
+          padding-top: 54px;
+        }
+      }
+    }
+  }
+}
+
+.footer__logo__wrap {
+  width: 167px;
+  display: block;
+  height: 26px;
+  margin-bottom: 25px;
+
+  @include breakpoint(desktop) {
+    width: 152px;
+    margin-bottom: 32px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.footer__contacts__list {
+  margin-bottom: 42px;
+}
+
+.footer__contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color5);
+  margin-bottom: 24px;
+  display: flex;
+
+  @include breakpoint(desktop) {
+    margin-bottom: 16px;
+  }
+
+  &:before {
+    margin-right: 16px;
+
+    @include breakpoint(desktop) {
+      margin-right: 27px;
+    }
+  }
+
+  &.contacts__location {
+    font-family: "Open Sans", sans-serif;
+
+    &:before {
+      content: url("./assets/icon-location.svg");
+    }
+  }
+
+  &.contacts__phone {
+    text-decoration: none;
+
+    &:before {
+      content: url("./assets/icon-phone.svg");
+    }
+  }
+
+  &.contacts__email {
+    text-decoration: none;
+
+    &:before {
+      content: url("./assets/icon-email.svg");
+    }
+  }
+}
+
+.support__list {
+  margin-bottom: 24px;
+
+  @include breakpoint(desktop) {
+    flex: 1.3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 103px;
+  }
+}
+
+.support__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: var(--color5);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+
+  &:hover {
+    @include breakpoint(desktop) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--color5);
+  text-align: center;
+
+  @include breakpoint(desktop) {
+    text-align: left;
+  }
+}
+
+//social media
+
+.social-media__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @include breakpoint(desktop) {
+    flex: 1.2;
+    justify-content: flex-start;
+    margin-bottom: 107px;
+  }
+}
+
+.social-media__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 1px solid var(--color6);
+  padding: 6px;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  &:hover {
+    border: 1px solid var(--color2);
+
+    &:before {
+      cursor: pointer;
+    }
+
+    &.social-media__item_facebook {
+      &:before {
+        background: url(./assets/logo-facebook-hover.png) no-repeat center
+          center;
+        background-size: contain;
+      }
+    }
+
+    &.social-media__item_twitter {
+      &:before {
+        background: url(./assets/logo-twitter-hover.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    &.social-media__item_insta {
+      &:before {
+        background: url(./assets/logo-insta-hover.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &.social-media__item_facebook {
+    &:before {
+      background: url(./assets/logo-facebook.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+  &.social-media__item_twitter {
+    &:before {
+      background: url(./assets/logo-twitter.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  &.social-media__item_insta {
+    &:before {
+      background: url(./assets/logo-insta.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+}

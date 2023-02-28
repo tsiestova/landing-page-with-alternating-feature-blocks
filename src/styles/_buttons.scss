@@ -1,0 +1,49 @@
+.btn {
+  display: block;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn__color {
+  background: var(--color2);
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  //padding: 3px 10px;
+  max-width: 240px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color5);
+
+  &:hover {
+    background: var(--color7);
+  }
+}
+
+.btn__transparent {
+  background: var(--color5);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.0954201);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--color3);
+  height: 24px;
+  //padding: 3px 10px;
+  max-width: 96px;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+
+  &:hover {
+    color: var(--color4);
+  }
+}

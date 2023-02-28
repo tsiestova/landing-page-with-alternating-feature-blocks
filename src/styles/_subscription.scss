@@ -1,0 +1,68 @@
+.main-container__subscription-block_wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -69px;
+
+  @include breakpoint(desktop) {
+    bottom: -92px;
+  }
+
+  .layout {
+    padding: 0 12px;
+
+    @include breakpoint(desktop) {
+      padding: 0;
+    }
+  }
+}
+
+.main-container__subscription-block {
+  background: var(--color5);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.0710768);
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  min-height: 176px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include breakpoint(desktop) {
+    height: 280px;
+  }
+
+  .btn__color {
+    font-weight: 700;
+    font-size: 10px;
+    max-width: 199px;
+    line-height: 40px;
+
+    @include breakpoint(desktop) {
+      height: 80px;
+      line-height: 80px;
+      border-radius: 40px;
+      font-size: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+}
+
+.main-container__subscription-block__heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color3);
+
+  @include breakpoint(desktop) {
+    font-size: 32px;
+    line-height: 60px;
+  }
+}

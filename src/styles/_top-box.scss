@@ -1,0 +1,90 @@
+.top__container {
+  padding-bottom: 40px;
+
+  @include breakpoint(desktop) {
+    padding-bottom: 60px;
+  }
+
+  .btn__color {
+    margin: auto;
+
+    @include breakpoint(desktop) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 56px;
+      margin: 0;
+      height: 56px;
+      max-width: 280px;
+      width: 100%;
+      border-radius: 28px;
+    }
+  }
+
+  .layout {
+    padding: 0 39px;
+
+    @include breakpoint(desktop) {
+      display: flex;
+      padding: 0 22px;
+      gap: 66px;
+    }
+  }
+}
+
+.top__container__wrap {
+  margin-bottom: 56px;
+
+  @include breakpoint(desktop) {
+    padding-top: 93px;
+    flex: 1.6;
+  }
+}
+
+.top__container__top-box__heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--color3);
+  margin-bottom: 24px;
+
+  @include breakpoint(desktop) {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: left;
+    max-width: 536px;
+    margin-bottom: 32px;
+  }
+}
+
+.top__container__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color3);
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+
+  @include breakpoint(desktop) {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color3);
+    margin-bottom: 33px;
+  }
+}
+
+.main-container__pic {
+  width: 100%;
+  height: 209px;
+
+  @include breakpoint(desktop) {
+    flex: 2.2;
+    height: auto;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
